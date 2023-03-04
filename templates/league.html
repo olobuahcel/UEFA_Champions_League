@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>UEFA Champions League Quarter Finals Featuring Teams</title>
+</head>
+<body>
+    
+    
+    <caption>UEFA Champions League Quarter Finals Since 1980</caption>
+    <table border="1">
+        <thead>
+            <tr>
+              <th>ID</th> 
+              <th>year</th>
+              <th>name</th>
+              <th>code</th>
+              <th>league</th>
+              <th>round</th>
+              <th>decades</th>
+              <th>superliga</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+               <!-- <b> <a href={{ url_for('league', year= row['0']) }}>{{row["location_ID"]}}</a></b> |  -->
+               <td>{{row["ID"]}}</td>
+               <td>{{row["year"]}}</td>
+               <td>{{row["name"]}}</td> 
+               <td>{{row["code"]}}</td>  
+               <td>{{row["league"]}}</td>
+               <td>{{row["round"]}}</td>
+               <td>{{row["decades"]}}</td>
+               <td>{{row["superliga"]}}</td>	 	
+            </tr>
+            {% endfor %}
+        <tbody>
+    <table>        
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <html>
+<head>
+    <title>UEFA Champions League Quarter Finals Featuring Teams</title>
+</head>
+<body>
+    
+    
+    <caption>UEFA Champions League Quarter Finals Since 1980</caption>
+    <table border="1">
+        <thead>
+            <tr>
+              <th>ID</th> 
+              <th>year</th>
+              <th>name</th>
+              <th>code</th>
+              <th>league</th>
+              <th>round</th>
+              <th>decades</th>
+              <th>superliga</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+               <b> <a href={{ url_for('league', year= row['0']) }}>{{row["location_ID"]}}</a></b> | 
+               <td>{{row["ID"]}}</td>
+               <td>{{row["year"]}}</td>
+               <td>{{row["name"]}}</td> 
+               <td>{{row["code"]}}</td>  
+               <td>{{row["league"]}}</td>
+               <td>{{row["round"]}}</td>
+               <td>{{row["decades"]}}</td>
+               <td>{{row["superliga"]}}</td>	 	
+            </tr>
+            {% endfor %}
+        <tbody>
+    <table>        
+</body>
+</html> -->
+
+
+

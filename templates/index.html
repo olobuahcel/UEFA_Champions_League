@@ -1,0 +1,91 @@
+
+<html>
+<head>
+  <title>UEFA Champions League Quarter Finals Since 1980</title>
+</head>
+<body>
+ 
+    <h1>Champions League Quarter Finals Since 1980</h1>
+    
+    
+    <h3>Introduction: Champions league</h3>
+    <p>The UEFA Champions League (abbreviated as UCL) is an annual club football competition organised 
+        by the Union of European Football Associations (UEFA) and contested by top-division European clubs,
+        deciding the competition winners through a round robin group stage to qualify for a double-legged knockout format,
+        and a single leg final.It is one of the most prestigious football tournaments in the world and the most prestigious 
+        club competition in European football, played by the national league champions 
+        (and, for some nations, one or more runners-up) of their national associations.</p>
+    <p><a href={{ url_for('league') }}>league</a> | <a href={{ url_for('locations') }}>locations</a></p>
+    <p>This dataset contains data of the teams that have played the UEFA Champions League quarterfinals since 1980. 
+        It also includes data about the last played round (QF: Quarterfinals / SF: Semifinals / RU: Runners-up / W: Winner)
+        and the city the matches took place..
+    </p>
+
+</body>
+</html>
+
+
+
+
+<!-- 
+<html>
+<head>
+  <title>UEFA Champions League Quarter Finals </title>
+</head>
+<body>
+ 
+    <h1>UEFA Champions League Quarter Finals Since 1980</h1>
+    
+    {% for row in rows %}
+    <p> UEFA Champions League:  
+       <b>{{row["year"]}}</b> | 
+       {{row["name"]}} | 
+        {{ row["code"]}} | 
+       {{row['league']}}	| 
+       {{row["round"]}} |
+        {{ row["decades"]}} |
+       {{row['superliga']}}	
+    </p>
+    {% endfor %}
+</body>
+</html> -->
+
+ 
+
+<!-- <html>
+<head>
+    <title>UEFA Champions League Quarter Finals Featuring Teams</title>
+</head>
+<body>
+    
+    
+    <caption>UEFA Champions League Quarter Finals Since 1980</caption>
+    <table border="1">
+        <thead>
+            <tr>
+              <th>year</th>
+              <th>name</th>
+              <th>code</th>
+              <th>league</th>
+              <th>round</th>
+              <th>decades</th>
+              <th>superliga</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+               <td>{{row["year"]}}</td>  
+               <td>{{row["name"]}}</td> 
+               <td>{{row["code"]}}</td>  
+               <td>{{row['league']}}</td>
+               <td>{{row["round"]}}</td>
+               <td>{{row["decades"]}}</td>
+               <td>{{row["superliga"]}}</td>	 	
+            </tr>
+            {% endfor %}
+        <tbody>
+    <table>        
+</body>
+ -->
+

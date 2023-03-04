@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Match Locations</title>
+</head>
+<body>
+    
+    
+    <caption>UEFA Champions League Quarter Finals Since 1980</caption>
+    <table border="1">
+        <thead>
+            <tr>
+              <th>ID</th> 
+              <th>league_ID</th>    
+              <th>country</th>
+              <th>city</th>
+              <th>areacode</th>
+              <th>metropol</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+               <td>{{row["id"]}}</td>
+               <td><a href="{{url_for('leagueID', ID=row['league_ID'])}}">{{row["league_ID"]}}</a></td>
+               <!-- <td>{{row["league_year"]}}</td> -->
+               <td>{{row["country"]}}</td>  
+               <td>{{row["city"]}}</td> 
+               <td>{{row["areacode"]}}</td>  
+               <td>{{row['metropol']}}</td>	 	
+            </tr>
+            {% endfor %}
+        <tbody>
+    <table>        
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <html>
+<head>
+    <title>Match Locations</title>
+</head>
+<body>
+    
+    
+    <caption>UEFA Champions League Quarter Finals Since 1980</caption>
+    <table border="1">
+        <thead>
+            <tr>
+              <th>ID</th> 
+              <th>league_ID</th>    
+              <th>country</th>
+              <th>city</th>
+              <th>areacode</th>
+              <th>metropol</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+               <td>{{row["id"]}}</td>
+               <td><a href="{{url_for('leagueID', ID=row['league_ID'])}}">{{row["league_ID"]}}</a></td>
+               <td>{{row["league_year"]}}</td> -->
+               <!-- <td>{{row["country"]}}</td>  
+               <td>{{row["city"]}}</td> 
+               <td>{{row["areacode"]}}</td>  
+               <td>{{row['metropol']}}</td>	 	
+            </tr>
+            {% endfor %}
+        <tbody>
+    <table>        
+</body>
+</html> -->
